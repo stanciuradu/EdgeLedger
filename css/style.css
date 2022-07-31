@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500&family=Ibarra+Real+Nova:wght@500&family=Luxurious+Roman&family=Open+Sans:ital,wght@0,300;1,400&family=The+Nautigal:wght@700&family=Waterfall&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.hero .navbar .logo ul{
+    list-style: none;
+}
+.hero .navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+.hero .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    /* vreau ca acest navbar sa fie fix, astfel incat la scroll sa ramana in aceeasi pozitie */
+    position: fixed;
+    top: 0px;
+    padding: 0 30px;
+}
+/* adaugarea unui efect de hover la click pe fiecare element din meniu */
+.hero .navbar a:hover{
+    border-bottom: 2px solid green;
+}
+.hero .navbar nav ul{
+    display: flex;
+    list-style-type: none;
+}
+.hero .navbar nav li{
+    padding: 10px 20px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.content{
+    background-image: url('../image_resources/image_resources/home/showcase.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+}
+.hero h1{
+    font-weight: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.content a{
+    text-decoration: none;
+    color: #333;  
+}
+h1, h2{
+    font-weight: 300;
+    line-height: 1.2;
+}
+p{
+    margin: 10px 0;
+}
+img{
+    width: 100%;
+}
