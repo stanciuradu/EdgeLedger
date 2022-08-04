@@ -150,7 +150,7 @@ body {
   /* imaginea de fundal sa fie fixa */
   object-fit: cover;
 }
-.solutions .row .column-2 {
+.solutions .column-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,7 +181,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: centers;
+  text-align: center;
 }
 .cases .row .column img {
   width: 20%;
@@ -205,4 +205,66 @@ body {
 }
 .solutions .row .column .blog {
   background-color: aqua;
+}
+.cases .row .details img {
+  width: 100%;
+  padding-left: 1rem;
+  border-radius: 50%;
+}
+
+.cases .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+.cases .row .details {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+
+/* Contact Form */
+.contact-form {
+  width: 100%;
+  padding: 20px 0;
+}
+.contact-form label {
+  /* vreau ca eticheta sa fie pe un rand nou-display:block */
+  display: block;
+  color: white;
+  margin-bottom: 5px;
+}
+.contact-form input {
+  width: 80%;
+  height: 40px;
+  padding: 4px;
+  border: 1px solid yellow;
+}
+.contact-form .btn {
+  padding: 12px 0;
+  margin-top: 20px;
+}
+.contact-form input:focus {
+  outline-color: green;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  height: 200px;
+}
+.footer .social a {
+  color: white;
+}
+.footer .social > * {
+  margin-right: 30px;
+}
+.footer a:hover {
+  color: green;
 }
