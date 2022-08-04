@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500&family=Ibarra+Real+Nova:wght@500&family=Luxurious+Roman&family=Open+Sans:ital,wght@0,300;1,400&family=The+Nautigal:wght@700&family=Waterfall&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500&family=Ibarra+Real+Nova:wght@500&family=Luxurious+Roman&family=Open+Sans:ital,wght@0,300;1,400&family=The+Nautigal:wght@700&family=Waterfall&display=swap");
 
 * {
   padding: 0px;
@@ -6,80 +6,203 @@
   box-sizing: border-box;
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
-    background: #fff;
-    color: #333;
-    line-height: 1.6;
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
 }
 
-.hero .navbar .logo ul{
-    list-style: none;
+/* Styling Navbar */
+.hero .navbar .logo ul {
+  list-style: none;
 }
-.hero .navbar a{
-    text-decoration: none;
-    color: #fff;
+
+.hero h1 {
+  font-weight: 400px;
 }
-.hero .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    opacity: 0.8;
-    width: 100%;
-    height: 70px;
-    /* vreau ca acest navbar sa fie fix, astfel incat la scroll sa ramana in aceeasi pozitie */
-    position: fixed;
-    top: 0px;
-    padding: 0 30px;
+
+.hero .navbar a {
+  text-decoration: none;
+  color: #fff;
 }
+
+.hero .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  /* vreau ca acest navbar sa fie fix, astfel incat la scroll sa ramana in aceeasi pozitie */
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+}
+
 /* adaugarea unui efect de hover la click pe fiecare element din meniu */
-.hero .navbar a:hover{
-    border-bottom: 2px solid green;
-}
-.hero .navbar nav ul{
-    display: flex;
-    list-style-type: none;
-}
-.hero .navbar nav li{
-    padding: 10px 20px;
-    margin: 0px 5px;
-    cursor: pointer;
-}
-.content{
-    background-image: url('../image_resources/image_resources/home/showcase.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 900px;
-}
-.hero h1{
-    font-weight: 400px;
+.hero .navbar a:hover {
+  border-bottom: 2px solid green;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.content a{
-    text-decoration: none;
-    color: #333;  
+.hero .navbar nav ul {
+  display: flex;
+  list-style-type: none;
 }
-h1, h2{
-    font-weight: 300;
-    line-height: 1.2;
+
+.hero .navbar nav li {
+  padding: 10px 20px;
+  margin: 0px 5px;
+  cursor: pointer;
 }
-p{
-    margin: 10px 0;
+
+/* Styling Header */
+/* vreau ca header-ul sa cuprinda imagine de fundal + navbar + logo + content */
+.hero {
+  background-image: url("../image_resources/image_resources/home/showcase.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
 }
-img{
-    width: 100%;
+
+/* pozitionarea contentului in centru header-ului */
+.hero .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* pozitionare pe centru pentru continut->i-am dat o inaltime content ului */
+  height: 100%;
+  padding: 0px 20px;
+}
+
+.hero .content h1 {
+  font-size: 55px;
+}
+
+.hero .content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+.hero .content a {
+  text-decoration: none;
+}
+
+/* utilizare de sudo selectori(dublu selectori) */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* am adaugat 0.6 ca valoare pentru partea de transparenta la background */
+  background-color: rgb(0, 0, 0, 0.6);
+}
+/* vreau ca tot ce e in partea de header sa nu mai fie transparent dupa ce am aplicat regula cu ::before */
+.hero * {
+  z-index: 10;
+}
+
+/* styling main */
+.icons .flex-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  color: #333;
+  height: 100%;
+}
+/* spatiere intre div-uri */
+.flex-items > div {
+  padding: 20px;
+}
+.icons .flex-items i {
+  border-radius: 50%;
+  margin-bottom: 15px;
+  color: green;
+}
+.icons .flex-items h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* styling solutions */
+.solutions .row {
+  display: flex;
+  height: 80vh;
+}
+.solutions .row .column {
+  width: 50%;
+}
+.solutions .row .column-1 img {
+  width: 100%;
+  height: 80vh;
+  /* imaginea de fundal sa fie fixa */
+  object-fit: cover;
+}
+.solutions .row .column-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  background-color: green;
+}
+.solutions .row .column h2 {
+  font-size: 40px;
+  font-weight: 100px;
+}
+.solutions .row .column h4 {
+  margin-bottom: 10px;
+}
+.solutions .row .column p {
+  margin: 20px 0;
+}
+.cases .row .column img:hover {
+  opacity: 0.7;
+}
+.cases .row2 .column img:hover {
+  opacity: 0.7;
+}
+.cases .section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: centers;
+}
+.cases .row .column img {
+  width: 20%;
+}
+.cases .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.cases .row2 .column img {
+  width: 20%;
+}
+.cases .row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.solutions .row .column .blog {
+  background-color: aqua;
 }
