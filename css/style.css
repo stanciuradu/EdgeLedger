@@ -295,11 +295,10 @@ body {
     padding: 5px;
   }
   .solutions .row .column-2 h2 {
-    margin-top: 3px;
     color: white;
   }
   .solutions .row .column-2 .contact-form input {
-    height: 20px;
+    height: 10px;
   }
   .solutions .row .column-2 .contact-form .btn {
     padding: 0px;
