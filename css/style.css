@@ -180,7 +180,8 @@ body {
   align-items: center;
   text-align: center;
   height: 100%;
-  background-color: green;
+  color: green;
+  font-weight: bold;
 }
 .solutions .row .column h2 {
   margin-top: 3px;
@@ -343,4 +344,39 @@ body {
 }
 .footer a:hover {
   color: green;
+}
+
+/* Styling blog.html */
+.blog{
+  background-image: url('../image_resources/image_resources/home/blog.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30vh;
+}
+.article-post{
+  background-color: grey;
+}
+.article-post-two{
+  background-color: black;
+}
+
+/* Styling post.html */
+.post{
+  padding: 50px 30px;
+}
+.post h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #ccc;
+}
+.post .meta{
+  margin-bottom: 30px;
+}
+.post img{
+  width: 300px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 30px;
 }
