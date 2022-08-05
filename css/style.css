@@ -21,7 +21,6 @@ body {
 .hero h1 {
   font-weight: 400px;
 }
-
 .hero .navbar a {
   text-decoration: none;
   color: #fff;
@@ -41,7 +40,22 @@ body {
   top: 0px;
   padding: 0 30px;
 }
-
+@media (max-width: 767.98px) {
+  .hero .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 0px;
+    position: relative;
+  }
+  .hero .navbar a {
+    color: red;
+    font-weight: bold;
+    font-size: 13px;
+  }
+}
 /* adaugarea unui efect de hover la click pe fiecare element din meniu */
 .hero .navbar a:hover {
   border-bottom: 2px solid green;
@@ -135,6 +149,15 @@ body {
   font-weight: bold;
   margin-bottom: 15px;
 }
+@media (max-width: 767.98px) {
+  .icons .flex-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
 
 /* styling solutions */
 .solutions .row {
@@ -160,7 +183,7 @@ body {
   background-color: green;
 }
 .solutions .row .column h2 {
-  font-size: 40px;
+  margin-top: 15px;
   font-weight: 100px;
 }
 .solutions .row .column h4 {
@@ -193,6 +216,16 @@ body {
   text-align: center;
   margin: 0 auto;
 }
+@media (max-width: 767.98px) {
+  .cases .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 .cases .row2 .column img {
   width: 20%;
 }
@@ -245,9 +278,32 @@ body {
 .contact-form .btn {
   padding: 12px 0;
   margin-top: 20px;
+  margin-bottom: 5px;
 }
 .contact-form input:focus {
   outline-color: green;
+}
+
+/* Styling formular */
+@media (max-width: 767.98px) {
+  .contact-form .form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+  }
+  .solutions .row .column-2 h2 {
+    margin-top: 3px;
+    color: white;
+  }
+  .solutions .row .column-2 .contact-form input {
+    height: 20px;
+  }
+  .solutions .row .column-2 .contact-form .btn {
+    padding: 0px;
+  }
 }
 
 /* Footer */
@@ -259,9 +315,30 @@ body {
   flex-direction: column;
   height: 200px;
 }
+@media (max-width: 767.98px) {
+  .footer {
+    height: 300px;
+  }
+  .footer p {
+    text-align: center;
+  }
+}
 .footer .social a {
   color: white;
 }
+@media (max-width: 767.98px) {
+  .footer .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer .social a {
+    margin-bottom: 5px;
+  }
+}
+
 .footer .social > * {
   margin-right: 30px;
 }
