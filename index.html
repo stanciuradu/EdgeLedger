@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+    <!-- adaug partea de stilizare pentru lightbox in CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/lightbox.min.css">
+    
     <link rel="stylesheet" type="text/css" href="./css/utilities.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>Welcome to Edge Leager</title>
@@ -93,18 +97,42 @@
             <div class="row">
                 <!-- pt fiecare coloana am 2 imagini -->
                 <div class="column">
-                    <img src="./image_resources/image_resources/cases/cases1.jpg" alt="imagine">
-                    <img src="./image_resources/image_resources/cases/cases2.jpg" alt="imagine">
-                    <img src="./image_resources/image_resources/cases/cases3.jpg" alt="imagine">
-                    <img src="./image_resources/image_resources/cases/cases4.jpg" alt="imagine">
+                    
+                    <!-- ca sa implementez lightbpx-ul trebuie ca aceste imagini sa fie puse in niste link-uri -->
+                    <a href="./image_resources/image_resources/cases/cases1.jpg" data-lightbox="cases">
+                        <img src="./image_resources/image_resources/cases/cases1.jpg" alt="imagine">
+                    </a>
+
+                    <a href="./image_resources/image_resources/cases/cases2.jpg" data-lightbox="cases">
+                        <img src="./image_resources/image_resources/cases/cases2.jpg" alt="imagine">
+                    </a>
+                    
+                    <a href="./image_resources/image_resources/cases/cases3.jpg" data-lightbox="cases">
+                        <img src="./image_resources/image_resources/cases/cases3.jpg" alt="imagine">
+                    </a>
+
+                    <a href="./image_resources/image_resources/cases/cases4.jpg" data-lightbox="cases">
+                        <img src="./image_resources/image_resources/cases/cases4.jpg" alt="imagine">
+                    </a> 
                 </div>
             </div>
             <div class="row2">
                 <div class="column">
-                    <img src="./image_resources/image_resources/cases/cases5.jpg" alt="imagine">
-                    <img src="./image_resources/image_resources/cases/cases6.jpg" alt="imagine">
-                    <img src="./image_resources/image_resources/cases/cases7.jpg" alt="imagine">
-                    <img src="./image_resources/image_resources/cases/cases8.jpg" alt="imagine">
+                    <a href="./image_resources/image_resources/cases/cases5.jpg" data-lightbox="cases">
+                        <img src="./image_resources/image_resources/cases/cases5.jpg" alt="imagine">
+                    </a>
+
+                    <a href="./image_resources/image_resources/cases/cases6.jpg" data-lightbox="cases">
+                        <img src="./image_resources/image_resources/cases/cases6.jpg" alt="imagine">
+                    </a>
+                    
+                    <a href="./image_resources/image_resources/cases/cases7.jpg" data-lightbox="cases">
+                        <img src="./image_resources/image_resources/cases/cases7.jpg" alt="imagine">
+                    </a>
+                    
+                    <a href="./image_resources/image_resources/cases/cases8.jpg" data-lightbox="cases">
+                        <img src="./image_resources/image_resources/cases/cases8.jpg" alt="imagine">
+                    </a>
                 </div> 
             </div>
         </section>
@@ -200,5 +228,8 @@
             <p>Copyright &copy; 2020</p>
         </footer>
     </footer>
+    
+    <!-- adauga scripturile de JS din libraria de lightbox -->
+    <script src="./js/lightbox.min.js"></script>
 </body>
 </html>
